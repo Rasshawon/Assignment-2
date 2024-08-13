@@ -93,7 +93,7 @@ nav {
 }
 
 .grid-col-2 {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
 }
@@ -106,6 +106,11 @@ nav {
 
 .grid-col-2 .main-img {
     width: 40%;
+}
+
+main {
+    display: flex;
+
 }
 
 .main-img {
@@ -129,6 +134,7 @@ nav {
 
 .img-info-1 h2,
 .img-info-2 h2 {
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -142,8 +148,8 @@ nav {
 
 
 .img-info-1 {
-    top: 8rem;
-    right: 2rem;
+    top: 6rem;
+    right: 5rem;
 
 }
 
@@ -151,12 +157,12 @@ nav {
     align-items: center;
     gap: .8rem;
     display: flex;
-    bottom: 5rem;
-    left: -8.5rem;
+    bottom: 8rem;
+    left: -4rem;
 
 }
 
-.cirlcle {
+.circle {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -171,7 +177,7 @@ nav {
 .main-img img {
     position: relative;
     top: -2rem;
-    width: 80%;
+    width: 60%;
     height: auto;
 }
 
@@ -207,6 +213,7 @@ h2.main-title {
 
 .habit {
     text-align: center;
+
 }
 
 .habit-img-sec {
@@ -573,8 +580,18 @@ hr {
 }
 
 @media only screen and (max-width: 576px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     body {
-        padding: 1rem;
+        margin: 0 auto;
+        background-color: #110e0e;
+        padding: .5rem 1rem;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
     }
 
     h2 {
@@ -599,6 +616,7 @@ hr {
         visibility: visible;
         color: white;
         font-size: 1.5rem;
+        margin-left: -300px;
 
     }
 
@@ -634,6 +652,7 @@ hr {
 
     .grid-col-2 {
         flex-direction: column;
+
     }
 
     .grid-col-2 .main-details,
@@ -642,13 +661,46 @@ hr {
     }
 
     .grid-col-2 .main-img img {
-        width: 60%;
+        top: 2rem;
+        left: 2rem;
+        width: 90%;
         height: auto;
         align-items: center;
     }
 
+    .img-info-1,
+    .img-info-2 {
+
+        padding: .5rem .5rem .5rem 1rem;
+    }
+
+    .img-info-1 h2,
+    .img-info-2 h2 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .img-info-1 p,
+    .img-info-2 p {
+        font-size: .7rem;
+        margin: .4rem 0 5px 0;
+    }
+
+    .img-info-1 {
+        top: 5rem;
+        right: -2rem;
+
+    }
+
+    .img-info-2 {
+        bottom: 3rem;
+        left: 2rem;
+
+    }
+
+
     .habit {
-        margin-top: 2rem;
+        margin-top: 45rem;
         text-align: center;
     }
 
@@ -802,4 +854,5 @@ hr {
     footer ul li {
         font-size: 1rem;
     }
+
 }
