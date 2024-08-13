@@ -11,6 +11,7 @@ body {
     margin: 0 auto;
     background-color: #110e0e;
     padding: 1.8rem 8rem;
+    overflow-x: hidden;
     font-family: "Inter", sans-serif;
 }
 
