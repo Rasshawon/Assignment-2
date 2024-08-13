@@ -101,7 +101,7 @@ nav {
 .grid-col-2 .main-details {
     width: 40%;
     position: relative;
-    top: 20px;
+    top: 1rem;
 }
 
 .grid-col-2 .main-img {
@@ -118,13 +118,13 @@ nav {
 .img-info-1,
 .img-info-2 {
     background: rgba(57, 57, 57, 0.828);
-    border-radius: 8px;
+    border-radius: .5rem;
     position: absolute;
     padding: .5rem .5rem .5rem 1rem;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .img-info-1 h2,
@@ -182,16 +182,16 @@ nav {
 
 button {
     padding: .7rem 2rem;
-    font-size: 16px;
+    font-size: 1rem;
     margin-right: 10px;
-    border-radius: 18px;
+    border-radius: 1.1rem;
     border: 1px solid white;
     color: white;
     background-color: transparent;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
+    -webkit-border-radius: 1.1rem;
+    -moz-border-radius: 1.1rem;
+    -ms-border-radius: 1.1rem;
+    -o-border-radius: 1.1rem;
 }
 
 .orange-btn {
@@ -212,7 +212,7 @@ h2.main-title {
 .habit-img-sec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 1.2rem;
 }
 
 .img-sec img {
@@ -246,13 +246,13 @@ h2.main-title {
 }
 
 .run-img {
-    padding: 20px;
+    padding: 1.2rem;
 }
 
 .run-img img {
     height: 100%;
-    max-height: 400px;
-    max-width: 450px;
+    max-height: 30rem;
+    max-width: 32rem;
     border-radius: .6rem;
     object-fit: none;
     object-position: 70% 30%;
@@ -283,7 +283,7 @@ h2.main-title {
 .img-container .img-wrapper {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 14rem;
 }
 
 .img-container img {
@@ -361,10 +361,13 @@ h2.main-title {
     font-size: 1.1rem;
     text-align: center;
     width: 60%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: .8rem;
+    border-radius: .4rem;
     z-index: 2;
-
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
 }
 
 /* Positioning classes */
@@ -490,14 +493,14 @@ select {
 .team-member {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 1rem;
+    padding: 1rem;
     background-color: #191919;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
 }
 
 .team-member img {
@@ -569,70 +572,141 @@ hr {
     margin: 40px 0 10px 0;
 }
 
+/* General Mobile Styles */
 @media only screen and (max-width: 576px) {
+    body {
+        padding: 1rem;
+    }
+
+    /* Navigation */
     nav {
-        display: flex;
-        gap: 8rem;
-        justify-content: space-between;
-    }
-
-    .new-section {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-
-    }
-
-    .menu-bar {
-        visibility: visible;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-list {
-        visibility: hidden;
+        display: none;
+        /* Hide the navigation list on mobile */
     }
 
+    .menu-bar {
+        display: block;
+        /* Show the menu bar icon */
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu-bar i {
+        cursor: pointer;
+    }
+
+    /* Grid Layout Adjustments */
     .grid-col-2 {
         flex-direction: column;
     }
 
-    .grid-col-2 .main-details {
-        width: 30rem;
-
-    }
-
+    .grid-col-2 .main-details,
     .grid-col-2 .main-img {
-        width: 40rem;
+        width: 100%;
     }
 
-    .main-img img {
-        top: 2rem;
-        width: 70%;
+    .grid-col-2 .main-img img {
+        width: 100%;
         height: auto;
     }
 
+    /* Habit Section */
     .habit {
-        margin-top: 45rem;
+        margin-top: 2rem;
+        text-align: center;
     }
 
     .habit-img-sec {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 1.8rem;
+        gap: 1rem;
     }
 
+    .img-sec img {
+        width: 100%;
+        height: auto;
+        border: 4px solid #181818;
+    }
+
+    /* Run Section */
     .run-extra {
-        display: flex;
         flex-direction: column;
+        padding: 1rem;
     }
 
+    .run-details {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .run-img img {
+        max-height: 20rem;
+        max-width: 100%;
+    }
+
+    /* Training Section */
+    .training-heading {
+        width: 100%;
+    }
+
+    .img-container {
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+    }
+
+    .img-wrapper {
+        height: 10rem;
+        /* Adjust height for mobile */
+    }
+
+    /* BMI Calculator */
     .Bmi-container {
-        display: flex;
         flex-direction: column;
-
+        padding: 1rem;
     }
 
+    .bmi-table {
+        margin-bottom: 1rem;
+    }
+
+    .bmi-calculate {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #Activity {
+        width: 100%;
+    }
+
+    .calculation input,
+    .calculation select {
+        width: calc(100% - 1rem);
+        /* Full width minus margin */
+    }
+
+    /* Team Section */
     .team-member {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Video Tips Section */
+    .vedio-container {
+        padding: 0;
+        width: 100%;
     }
 
     iframe {
@@ -640,10 +714,42 @@ hr {
         height: auto;
     }
 
+    /* Footer */
     footer {
-        display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
+    .grid-3-cols {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .col1,
+    .col2,
+    .col3 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .col2,
+    .col3 {
+        width: 100%;
+    }
+
+    /* Table */
+    table {
+        width: 100%;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.8rem;
+    }
+
+    /* Overlay Text */
+    .overlay {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
 }
