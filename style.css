@@ -577,6 +577,14 @@ hr {
         padding: 1rem;
     }
 
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     .new-section {
         margin-bottom: 2rem;
     }
@@ -591,15 +599,16 @@ hr {
         visibility: visible;
         color: white;
         font-size: 1.5rem;
+
     }
 
     .nav-list {
         display: none;
     }
 
-    .main-img {
-        width: 100%;
-        margin-bottom: 300px;
+    .main {
+        display: flex;
+        flex-direction: column;
     }
 
     .main h2 {
@@ -608,6 +617,11 @@ hr {
 
     .unique-font {
         font-size: 3rem;
+    }
+
+    button {
+        font-size: .8rem;
+
     }
 
     .habit {
@@ -624,12 +638,13 @@ hr {
 
     .grid-col-2 .main-details,
     .grid-col-2 .main-img {
-        width: 100%;
+        width: 90%;
     }
 
     .grid-col-2 .main-img img {
-        width: 100%;
+        width: 60%;
         height: auto;
+        align-items: center;
     }
 
     .habit {
@@ -782,5 +797,9 @@ hr {
         text-align: left;
         padding-left: 10px;
 
+    }
+
+    footer ul li {
+        font-size: 1rem;
     }
 }
